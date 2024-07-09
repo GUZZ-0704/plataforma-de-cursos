@@ -1,0 +1,230 @@
+.header{
+    background-color: #091F2C;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.menu{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-bar{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #474747;
+    color: white;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px 20px;
+    display: none;
+}
+
+#menu-switch{
+    display: none;
+}
+
+.menu-mobile-label{
+    display: block;
+    margin: 0px 20px 5px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #474747;
+}
+
+.menu #menu-switch:checked + ul{
+    display: block;
+}
+
+.menu li{
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 3px;
+    text-align: center;
+    border-bottom: 1px solid #474747;
+}
+
+.menu a, .menu-mobile-label{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media (640px <= width < 992px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px;
+        padding-right: 0px;
+    }
+
+    .logo {
+        margin: 0;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .logo::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 50px;
+        background-color: #504f4f;
+        margin-left: 20px;
+    }
+    .search-bar {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .search-button{
+        margin-left: auto;
+        padding: 2px;
+        border: none;
+        border-radius: 5px;
+        background-color: #474747;
+        color: white;
+    }
+
+    .menu {
+        margin: 0;
+        flex: 1;
+        display: flex;
+        padding-left: 10px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .menu-mobile-label {
+        display: none;
+    }
+
+    .menu ul, .menu #menu-switch:checked + ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 0 10px;
+        border: none;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+@media (width > 992px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px;
+        padding-right: 0px;
+    }
+
+    .logo {
+        margin: 0;
+        padding-left: 145px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 50px;
+        background-color: #504f4f;
+        margin-left: 40px;
+    }
+
+    .search-bar {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .search-input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 1px;
+    }
+
+    .search-button{
+        margin-left: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #474747;
+        color: white;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        padding: 0px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    .menu-mobile-label {
+        display: none;
+    }
+
+    .menu ul, .menu #menu-switch:checked + ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        border: none;
+        padding-right: 35px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+}

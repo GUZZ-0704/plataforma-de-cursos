@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Academy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/courses.css">
+</head>
+<body>
+    <main class="main-container">
+        <header class="header">
+            <a href="../../../index.html">
+                <h1 class="logo">G-academy</h1>
+            </a>
+            <nav class="menu">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="¿Qué deseas aprender?">
+                    <button class="search-button">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </div>
+                <label for="menu-switch" class="menu-mobile-label">Menu</label>
+                <input type="checkbox" id="menu-switch">
+                <ul>
+                    <li><a href="#contact">Contactanos</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="login.html">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="title-container">
+            <h1 class="course-main-title">
+                <span>Cursos</span>
+            </h1>
+            <label>
+                <select class="category-select">
+                    <option value="all">Todos los Cursos</option>
+                    <option value="web">Desarrollo Web</option>
+                    <option value="mobile">Desarrollo Móvil</option>
+                    <option value="programacion">Programacion</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </label>
+        </div>
+        <section class="courses">
+            <div class="courses-items">
+             </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact-title">Contactanos</h2>
+            <p class="contact-description">
+                Si tienes alguna pregunta o comentario, no dudes en contactarnos.
+                Estamos aquí para ayudarte en lo que necesites.
+            </p>
+            <form class="contact-form">
+                <input type="text" class="contact-input" placeholder="Nombre">
+                <input type="email" class="contact-input" placeholder="Correo Electrónico">
+                <textarea class="contact-input" placeholder="Mensaje"></textarea>
+                <button class="contact-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">
+            © 2021 G-academy. Todos los derechos reservados.
+        </p>
+    </footer>
+    <script src="../../js/loadcoursesp.js"></script>
+</body>
+</html>

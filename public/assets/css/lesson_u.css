@@ -1,0 +1,94 @@
+.lesson-div{
+    background-image: url("../images/bg2.png");
+    background-size: 100%;
+    padding: 10px;
+}
+
+.lesson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    background-color: #EEEBE4;
+    margin-top: 0;
+}
+
+.lesson-title{
+    color: #091F2C;
+    font-family: 'Lato', sans-serif;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.material-title{
+    color: #091F2C;
+    font-family: 'Lato', sans-serif;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.material-description{
+    color: #091F2C;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+.material-video-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (640px <= width < 992px){
+    .material-video-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .material-title{
+        font-size: 20px;
+    }
+
+    .material-description{
+        font-size: 18px;
+    }
+
+}
+
+@media (width > 992px){
+    .material-video-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .material-title{
+        font-size: 24px;
+    }
+
+    .material-description{
+        font-size: 20px;
+
+    }
+
+
+}

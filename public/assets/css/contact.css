@@ -1,0 +1,100 @@
+.contact{
+    background-color: #EEEBE4;
+    padding: 20px;
+}
+
+.contact-title{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.contact-description{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0px;
+}
+
+.contact-form{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-form input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contact-form textarea{
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contact-form button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #474747;
+    color: white;
+}
+
+@media (640px <= width < 992px){
+    .contact-title{
+        font-size: 24px;
+    }
+
+    .contact-description{
+        font-size: 16px;
+    }
+
+    .contact-form input{
+        width: 400px;
+    }
+
+    .contact-form textarea{
+        width: 400px;
+    }
+
+    .contact-form button{
+        width: 150px;
+    }
+}
+
+@media (width > 992px){
+    .contact-title{
+        font-size: 26px;
+    }
+
+    .contact-description{
+        font-size: 18px;
+    }
+
+    .contact-form input{
+        width: 500px;
+    }
+
+    .contact-form textarea{
+        width: 500px;
+    }
+
+    .contact-form button{
+        width: 200px;
+    }
+}

@@ -1,0 +1,12 @@
+.footer{
+    background-color: #091F2C;
+    color: white;
+}
+
+.footer-text{
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+

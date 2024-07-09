@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Academy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/course_a.css">
+</head>
+<body>
+<main class="main-container">
+    <form id="add-course-form" class="inputs">
+        <div class="course-name">
+            <p>Nombre del curso:</p>
+            <input type="text" class="course-name-input" id="name">
+            <div class="message-error">
+                <p id="course-name-error" class="course-name-error"></p>
+            </div>
+        </div>
+        <div class="course-description">
+            <p>Descripción del curso</p>
+            <textarea class="course-description-input" id="description"></textarea>
+            <div class="message-error">
+                <p id="course-description-error" class="course-description-error"></p>
+            </div>
+        </div>
+        <div class="course-category">
+            <p>Categoria del curso:</p>
+            <select class="course-category-select" id="category">
+                <option value="Desarrollo Web">Desarrollo Web</option>
+                <option value="Desarrollo Movil">Desarrollo Movil</option>
+                <option value="Programacion">Programacion</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </div>
+        <div class="course-video">
+            <p>Video del curso:</p>
+            <input type="text" class="course-video-input" id="video">
+            <div class="message-error">
+                <p id="course-video-error" class="course-video-error"></p>
+            </div>
+        </div>
+        <div class="course-level">
+            <p>Nivel del curso:</p>
+            <select class="course-level-select" id="level">
+                <option value="inicial">Inicial</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+        </div>
+        <div class="course-image">
+            <p>Imagen del curso:</p>
+            <input type="file" class="course-image-input" id="image" name="image">
+            <div class="message-error">
+                <p id="course-image-error" class="course-image-error"></p>
+            </div>
+        </div>
+        <div class="course-modality">
+            <p>Modalidad del curso:</p>
+            <select class="course-modality-select" id="modality">
+                <option value="En vivo">En vivo</option>
+                <option value="Pregrabado">Pregrabado</option>
+            </select>
+        </div>
+        <div class="course-certified">
+            <p>¿Certificado?</p>
+            <input type="checkbox" class="course-certified-input" id="certificate">
+        </div>
+        <button type="submit" class="save-course-button">Guardar</button>
+        <a id="add-lesson-button" class="add-lesson-button">Añadir Lección</a>
+    </form>
+    <table id="lessons-table" class="lessons-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lección 1</td>
+                <td>
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lección 2</td>
+                <td>
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lección 3</td>
+                <td>
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</main>
+<script src="../../js/admin-js/editCourse.js"></script>
+<script src="../../js/admin-js/addCourse.js"></script>
+<script src="../../js/admin-js/deleteLesson.js"></script>
+</body>
+</html>

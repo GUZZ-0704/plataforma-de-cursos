@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Academy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/lesson_a.css">
+</head>
+<body>
+    <main class="main-container">
+        <form class="inputs"  id="add-lesson-form">
+            <div class="lesson-name">
+                <p>Nombre de la leccion:</p>
+                <input id="title" type="text" class="lesson-name-input">
+                <div class="error-message" id="lesson-name-error"></div>
+            </div>
+            <div class="lesson-description">
+                <p>Descripción de la leccion</p>
+                <textarea id="description" class="lesson-description-input"></textarea>
+                <div class="error-message" id="lesson-description-error"></div>
+            </div>
+            <checkbox class="lesson-has-video">
+                <p>Tiene video:</p>
+                <input id="check-video" type="checkbox" class="lesson-has-video-input">
+            </checkbox>
+            <div class="lesson-video">
+                <p>Video del curso:</p>
+                <input disabled id="video" type="text" class="lesson-video-input">
+            </div>
+            <checkbox class="lesson-has-image">
+                <p>Tiene quiz:</p>
+                <input id="check-image" type="checkbox" class="lesson-has-image-input">
+            </checkbox>
+            <div class="lesson-image">
+                <p>Imagen del quiz:</p>
+                <input disabled id="image" type="file" class="lesson-image-input">
+            </div>
+            <div class="lesson-orden">
+                <p>Orden:</p>
+                <input id="orden" type="text" class="lesson-orden-input">
+            </div>
+            <button type="submit" class="save-lesson-button">Guardar</button>
+        </form>
+    </main>
+
+    <script src="../../js/admin-js/addLesson.js"></script>
+    <script src="../../js/admin-js/editLesson.js"></script>
+
+</body>
+</html>
